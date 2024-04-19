@@ -52,8 +52,8 @@ const Card = ({ post }: Props) => {
               <View style={styles.comm}>
                 <Text style={styles.comment}>{item.body}</Text>
                 <View>
-                <AntDesign name="hearto" size={24} color="black"/>
-                <Text>210</Text>
+                <AntDesign name="hearto" size={24} color="gray"/>
+                <Text style={{color:"gray"}}>210</Text>
               </View>
               </View>
               <Text style={styles.actions}>Responder        Ver tradução</Text>
@@ -69,10 +69,12 @@ const Card = ({ post }: Props) => {
 
 const styles = StyleSheet.create({
   container: {
+
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
-    margin: 10,
+    marginRight: 30,
+    marginLeft: 5,
     borderColor: "#fff",
     borderWidth: 2,
     borderRadius: 10,
